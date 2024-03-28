@@ -1,6 +1,7 @@
-import App, { useState } from "react";
+import { useState } from "react";
 
-function Avatar({ img, firstName, lastName, donuts }) {
+function Avatar({ img, firstName, lastName }) {
+  const [donuts, setDonuts] = useState(0);
   return (
     <>
       <img src={img} alt={firstName} />
@@ -13,7 +14,7 @@ function Avatar({ img, firstName, lastName, donuts }) {
         {firstName} {lastName}
       </p>
       <div>
-        <button onClick={() => setDonuts}>🍩 {donuts}</button>
+        <button onClick={() => setDonuts(donuts + 1)}>🍩 {donuts}</button>
       </div>
     </>
   );

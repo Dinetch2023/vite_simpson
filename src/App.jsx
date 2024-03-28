@@ -42,7 +42,6 @@ function App() {
         img={homer.image}
         firstName={homer.firstName}
         lastName={homer.lastName}
-        donuts={"42"}
       />
       <Avatar
         img={marge.image}
@@ -59,7 +58,6 @@ function App() {
         img={bart.image}
         firstName={bart.firstName}
         lastName={bart.lastName}
-        donuts={"0"}
       />
       <Avatar
         img={maggie.image}
