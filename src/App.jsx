@@ -38,32 +38,15 @@ function App() {
     <>
       <h1>La Famille Simpson</h1>
 
-      <Avatar
-        img={homer.image}
-        firstName={homer.firstName}
-        lastName={homer.lastName}
-      />
-      <Avatar
-        img={marge.image}
-        firstName={marge.firstName}
-        lastName={marge.lastName}
-      />
-      <Avatar
-        img={lisa.image}
-        firstName={lisa.firstName}
-        lastName={lisa.lastName}
-      />
-
-      <Avatar
-        img={bart.image}
-        firstName={bart.firstName}
-        lastName={bart.lastName}
-      />
-      <Avatar
-        img={maggie.image}
-        firstName={maggie.firstName}
-        lastName={maggie.lastName}
-      />
+      {personnages.map((personnage, index) => (
+        <Avatar
+          key={index}
+          img={personnage.image}
+          firstName={personnage.firstName}
+          lastName={personnage.lastName}
+          donuts={personnage.donuts}
+        />
+      ))}
     </>
   );
 }
