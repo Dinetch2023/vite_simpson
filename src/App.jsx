@@ -5,12 +5,14 @@ function App() {
       "https://www.stickees.com/files/cartoon/the-simpsons/2239-bart-simpson-.png",
     firstName: "Bart",
     lastName: "Simpson",
+    donuts: "0",
   };
   const homer = {
     image:
       "https://www.stickees.com/files/cartoon/the-simpsons/2248-homer-simpson-happy.png",
     firstName: "Bart",
     lastName: "Simpson",
+    donuts: "42",
   };
   const marge = {
     image:
@@ -40,6 +42,7 @@ function App() {
         img={homer.image}
         firstName={homer.firstName}
         lastName={homer.lastName}
+        donuts={"42"}
       />
       <Avatar
         img={marge.image}
@@ -56,6 +59,7 @@ function App() {
         img={bart.image}
         firstName={bart.firstName}
         lastName={bart.lastName}
+        donuts={"0"}
       />
       <Avatar
         img={maggie.image}
