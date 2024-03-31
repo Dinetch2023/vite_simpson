@@ -5,14 +5,14 @@ function App() {
       "https://www.stickees.com/files/cartoon/the-simpsons/2239-bart-simpson-.png",
     firstName: "Bart",
     lastName: "Simpson",
-    donuts: "0",
+    donuts: 5,
   };
   const homer = {
     image:
       "https://www.stickees.com/files/cartoon/the-simpsons/2248-homer-simpson-happy.png",
-    firstName: "Bart",
+    firstName: "Homer",
     lastName: "Simpson",
-    donuts: "42",
+    donuts: 45,
   };
   const marge = {
     image:
@@ -20,12 +20,14 @@ function App() {
 
     firstName: "Marge",
     lastName: "Simpson",
+    donuts: -10,
   };
   const lisa = {
     image:
       "https://www.stickees.com/files/cartoon/the-simpsons/2250-lisa-simpson-sticker.png",
     firstName: "Lisa",
     lastName: "Simpson",
+    donuts: 2,
   };
   const maggie = {
     image:
@@ -45,6 +47,7 @@ function App() {
           firstName={personnage.firstName}
           lastName={personnage.lastName}
           donuts={personnage.donuts}
+          isBg
         />
       ))}
     </>
